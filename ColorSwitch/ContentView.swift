@@ -5,30 +5,25 @@
 //  Created by Dorian Emenir on 05/06/2024.
 //
 
+// MARK: Imports
 import SwiftUI
 
+// MARK: ContentView's view
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Spacer()
-            
-            Button(action: {
-                let color = colorSwitch()
-            }, label: {
-                Text("Switch")
-            })
-            .buttonStyle(.bordered)
-            
-            Spacer()
-        }
-        .padding()
-        .background(Color.red)
-    }
     
-    func colorSwitch() -> Color {
-        return Color(
-            red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1)
-        )
+    /// colorSelected : Color - Selected color from the `colorSwitch()` function from `ScreenColorButtons` struct
+    @State private var colorSelected: Color = .primary
+    
+    var body: some View {
+        
+        ZStack {
+            /// Update's the view's background color given the state variable `colorSelected`
+            Color(colorSelected)
+            
+            /// Creates the button calling the `ScreenColorButtons` struct
+            ScreenColorButtons(colorSelected: $colorSelected, text: "Switch", color: .accentColor)
+        }
+        .ignoresSafeArea() /// Expand the ZStack all screen
     }
 }
 
