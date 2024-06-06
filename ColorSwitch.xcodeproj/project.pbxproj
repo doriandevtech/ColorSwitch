@@ -14,6 +14,7 @@
 		F47B3E5E2C11055400024842 /* ColorSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B3E5D2C11055400024842 /* ColorSwitchTests.swift */; };
 		F47B3E682C11055400024842 /* ColorSwitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B3E672C11055400024842 /* ColorSwitchUITests.swift */; };
 		F47B3E6A2C11055400024842 /* ColorSwitchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B3E692C11055400024842 /* ColorSwitchUITestsLaunchTests.swift */; };
+		F4ED987C2C1242B800F071C7 /* ScreenColorButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED987B2C1242B800F071C7 /* ScreenColorButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F47B3E632C11055400024842 /* ColorSwitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorSwitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47B3E672C11055400024842 /* ColorSwitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitchUITests.swift; sourceTree = "<group>"; };
 		F47B3E692C11055400024842 /* ColorSwitchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4ED987B2C1242B800F071C7 /* ScreenColorButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenColorButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				F47B3E4C2C11055300024842 /* ColorSwitchApp.swift */,
 				F47B3E4E2C11055300024842 /* ContentView.swift */,
+				F4ED987B2C1242B800F071C7 /* ScreenColorButtons.swift */,
 				F47B3E502C11055400024842 /* Assets.xcassets */,
 				F47B3E522C11055400024842 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4ED987C2C1242B800F071C7 /* ScreenColorButtons.swift in Sources */,
 				F47B3E4F2C11055300024842 /* ContentView.swift in Sources */,
 				F47B3E4D2C11055300024842 /* ColorSwitchApp.swift in Sources */,
 			);
