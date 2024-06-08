@@ -20,6 +20,7 @@ struct ScreenColorButtons: View {
             colorSelected = colorSwitch()
         }, label: {
             Text(text)
+                .padding(32)
         })
         .foregroundStyle(color)
         
@@ -31,5 +32,5 @@ struct ScreenColorButtons: View {
 }
 
 #Preview {
-    ScreenColorButtons(colorSelected: .constant(.blue), text: "Blue", color: .red)
+    ScreenColorButtons(colorSelected: .constant(.blue), text: "Switch color", color: .red)
 }
