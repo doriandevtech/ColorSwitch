@@ -11,13 +11,13 @@ import SwiftUI
 // MARK: ScreenColorButtons's view
 struct ScreenColorButtons: View {
     
-    /// `colorSelected - Color: color shown on screen and binned to the state variable
+    /// `colorSelected`: Color - color shown on screen and binned to the state variable
     @Binding var colorSelected: Color
     
-    /// `text` - String: text displayed on the button
+    /// `text`: String - text displayed on the button
     var text: String
     
-    /// `color` - Color: button's foreground color
+    /// `color`: Color - button's foreground color
     var color: Color
 
     var body: some View{
