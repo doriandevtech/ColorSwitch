@@ -11,17 +11,17 @@ import SwiftUI
 // MARK: ContentView's view
 struct ContentView: View {
     
-    /// `colorSelected`: Color - Selected color from the `colorSwitch()` function from `ScreenColorButtons` struct
-    @State private var colorSelected: Color = .primary
+    /// `randomColorGenerated`: Color - Selected color from the `colorSwitch()` function from `SwitchColorButton` struct
+    @State private var randomColorGenerated: Color = .primary
     
     var body: some View {
         
         ZStack {
-            /// Update's the view's background color given the state variable `colorSelected`
-            Color(colorSelected)
+            /// Update's the view's background color given the state variable `randomColorGenerated`
+            Color(randomColorGenerated)
             
-            /// Creates the `ScreenColorButtons` instance
-            ScreenColorButtons(colorSelected: $colorSelected, text: "Switch", color: .accentColor)
+            /// Creates the `SwitchColorButton` instance
+            SwitchColorButton(randomColorGenerated: $randomColorGenerated, switchButtonLabel: "Switch", color: .accentColor)
         }
         .ignoresSafeArea() /// Expand the ZStack all screen
     }
